@@ -72,7 +72,7 @@ abstract class Result implements \Iterator
 	 *
 	 * @return array  Array of rows
 	 */
-	public function as_array(): mixed
+	public function as_array(): array
 	{
 		$arr = array();
 		foreach ($this as $row)
@@ -102,7 +102,7 @@ abstract class Result implements \Iterator
 	 * @param  string $column Column name
 	 * @return mixed  Column value
 	 */
-	public function get($column): mixed
+	public function get($column)
 	{
 		if ($this->valid() && isset($this->_row->$column))
 		{
@@ -117,7 +117,7 @@ abstract class Result implements \Iterator
 	 *
 	 * @return mixed  Raw database result
 	 */
-	public function result(): mixed
+	public function result()
 	{
 		return $this->_result;
 	}
