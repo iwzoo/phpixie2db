@@ -1,0 +1,26 @@
+{
+    "name": "phpixie2/db",
+    "description": "PHPixie Database library",
+    "keywords": ["database", "mysql", "postgresql", "sqlite"],
+    "homepage": "https://github.com/iwzoo/phpixie2db",
+    "type": "library",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "iwzoo",
+            "homepage": "https://github.com/iwzoo"
+        }
+    ],
+    "require": {
+        "phpixie2/core": "2.*@dev"
+    },
+    "autoload": {
+        "psr-0": {"PHPixie": "classes/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }, 
+        "forked-from": "phpixie/db"
+    }
+}
