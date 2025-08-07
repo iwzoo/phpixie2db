@@ -37,9 +37,10 @@ abstract class Result implements \Iterator
 	/**
 	 * Returns current row
 	 *
-	 * @return object Current row in result set
+	 * @return object|false Current row in result set
 	 */
-	public function current(): object | false
+	#[\ReturnTypeWillChange] 
+	public function current()
 	{
 		$this->check_fetched();
 		return $this->_row;
