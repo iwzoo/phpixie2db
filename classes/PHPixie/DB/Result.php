@@ -39,7 +39,7 @@ abstract class Result implements \Iterator
 	 *
 	 * @return object Current row in result set
 	 */
-	public function current(): object
+	public function current(): object | false
 	{
 		$this->check_fetched();
 		return $this->_row;
